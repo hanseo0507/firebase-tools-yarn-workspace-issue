@@ -1,0 +1,14 @@
+{
+  "hosting": [
+    {
+      "target": "package-a",
+      "source": "./packages/package-a",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    },
+    {
+      "target": "package-b",
+      "source": "./packages/package-b",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[debug] [2023-02-23T04:34:35.381Z] ----------------------------------------------------------------------
+[debug] [2023-02-23T04:34:35.382Z] Command:       /Users/hanseo0507/.nvm/versions/node/v18.14.0/bin/node /Users/hanseo0507/.nvm/versions/node/v18.14.0/bin/firebase emulators:start --config ./firebase.json
+[debug] [2023-02-23T04:34:35.383Z] CLI Version:   11.23.1
+[debug] [2023-02-23T04:34:35.383Z] Platform:      darwin
+[debug] [2023-02-23T04:34:35.383Z] Node Version:  v18.14.0
+[debug] [2023-02-23T04:34:35.388Z] Time:          Thu Feb 23 2023 13:34:35 GMT+0900 (Korean Standard Time)
+[debug] [2023-02-23T04:34:35.388Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-23T04:34:35.454Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-23T04:34:35.454Z] > authorizing via signed-in user (i.hansu.lee@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2023-02-23T04:34:35.712Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2023-02-23T04:34:35.712Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-23T04:34:35.712Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-02-23T04:34:35.720Z] [hub] writing locator at /var/folders/5b/fcgw0st112b3p4_4flvm2fhh0000gn/T/hub-firebase-tools-yarn-berry.json
+[debug] [2023-02-23T04:34:35.726Z] > refreshing access token with scopes: []
+[debug] [2023-02-23T04:34:35.727Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-02-23T04:34:35.727Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-23T04:34:36.965Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-02-23T04:34:36.966Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-23T04:34:36.972Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/firebase-tools-yarn-berry [none]
+[debug] [2023-02-23T04:34:37.491Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/firebase-tools-yarn-berry 200
+[debug] [2023-02-23T04:34:37.491Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/firebase-tools-yarn-berry {"projectId":"firebase-tools-yarn-berry","projectNumber":"855088905496","displayName":"firebase-tools-yarn-berry","name":"projects/firebase-tools-yarn-berry","resources":{"hostingSite":"fir-tools-yarn-berry"},"state":"ACTIVE","etag":"1_d1089d22-1ca4-4a69-ae37-d8b1821d8fd1"}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2023-02-23T04:34:45.406Z] Error: Epic fail.
+    at prepareFrameworks (/Users/hanseo0507/.nvm/versions/node/v18.14.0/lib/node_modules/firebase-tools/lib/frameworks/index.js:235:19)
+    at async Object.startAll (/Users/hanseo0507/.nvm/versions/node/v18.14.0/lib/node_modules/firebase-tools/lib/emulator/controller.js:295:9)
+    at async /Users/hanseo0507/.nvm/versions/node/v18.14.0/lib/node_modules/firebase-tools/lib/commands/emulators-start.js:32:43
+[error] 
+[error] Error: An unexpected error has occurred.

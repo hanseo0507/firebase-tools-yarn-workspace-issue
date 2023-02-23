@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "firebase-tools-yarn-berry"
+  },
+  "targets": {
+    "firebase-tools-yarn-berry": {
+      "hosting": {
+        "package-a": [
+          "package-a"
+        ],
+        "package-b": [
+          "package-b"
+        ]
+      }
+    }
+  }
+}
